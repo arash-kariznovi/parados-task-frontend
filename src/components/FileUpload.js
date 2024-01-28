@@ -59,14 +59,14 @@ const FileUpload = () => {
 
   return (
     <div>
-      <h1 className='h1 text-4xl font-extrabold p-4'> Upload Files</h1>{' '}
+      <h1 className='h1 text-4xl font-extrabold p-4 mx-auto'> Upload Files</h1>{' '}
       <div className=' flex flex-col items-center justify-center mx-auto mt-8'>
         <input
           type='file'
           onChange={handleFileChange}
           className='bg-sky-100 text-center px-4 py-20 md:p-16  text-center rounded-lg h-48 border-2 border-dashed border-sky-300'
         />
-        <div className='w-full'>
+        <div className='w-4/5 md:w-96 mx-auto'>
           {progress > 0 && <ProgressBar progress={progress} />}
         </div>
         <button

@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <>
+    <div className=''>
       <nav className=' flex justify-between shadow-2xl w-full p-6'>
         <img
           src='logo.png'
@@ -31,7 +31,7 @@ const Layout = () => {
       </nav>
 
       <Outlet />
-    </>
+    </div>
   )
 }
 

@@ -28,10 +28,14 @@ const TextInput = () => {
 
   return (
     <div>
-      <h1 className='h1 text-4xl font-extrabold p-4'> Add Text Record</h1>{' '}
+      <h1 className='h1 text-4xl font-extrabold p-4 mx-auto'>
+        {' '}
+        Add Text Record
+      </h1>{' '}
       <div className='flex flex-col items-center max-w-md mx-auto mt-8'>
         <textarea
-          className='bg-sky-100 p-1 resize-none w-4/5 rounded-lg h-48 border-2 border-dashed border-sky-300'
+          className='bg-sky-100 p-1 px-2 resize-none w-4/5 rounded-lg h-48 border-2 border-dashed border-sky-300'
+          placeholder='add your text here...'
           type='textarea'
           onChange={inputHandler}
           value={text}

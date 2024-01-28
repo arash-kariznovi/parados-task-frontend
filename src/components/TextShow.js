@@ -14,7 +14,8 @@ const TextShow = () => {
         }
         const data = await response.json()
         console.log(data)
-        setFiles(data)
+
+        setFiles(data.responses)
       } catch (error) {
         console.error('Error fetching files:', error.message)
       } finally {
@@ -26,16 +27,16 @@ const TextShow = () => {
   }, [])
 
   return (
-    <div className='mx-auto my-8'>
+    <div className='mx-auto'>
       <h1 className='h1 text-4xl font-extrabold p-4'> Text Records</h1>{' '}
       {loading ? (
         <p>loading.. </p>
       ) : (
-        <ul className='flex flex-col md:flex-row flex-wrap mx-auto justify-around mx-16'>
-          {files.responses.map((file) => (
+        <ul className='flex flex-col md:flex-row flex-wrap mx-auto justify-around mx-16  px-8 md:px-16'>
+          {files.map((file) => (
             <li
               className='flex flex-col md:flex-row text-center justify-between break-all shadow py-8  md:py-2 px-4 m-2 items-center'
-              key={file.id}
+              key={file.createdAt}
             >
               {file.text}
             </li>

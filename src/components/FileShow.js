@@ -27,7 +27,10 @@ const FileShow = () => {
 
   return (
     <div>
-      <h1 className='h1 text-4xl font-extrabold p-4'> Download Files</h1>{' '}
+      <h1 className='h1 text-4xl font-extrabold p-4 mx-auto'>
+        {' '}
+        Download Files
+      </h1>{' '}
       <div className=' container mx-auto rounded-lg py-8 px-8 md:px-16'>
         {' '}
         {loading ? (
