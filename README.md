@@ -9,14 +9,18 @@ The task implementation is as follows:
 
 ## Frontend code Link: https://github.com/arash-kariznovi/parados-task-frontend
 
-Backend Tools: NodeJS, ExpressJS, Firestore, Firestorage.
+Backend Tools: NodeJS, ExpressJS, Firestore, Firestorage, PWA, Responsive web design.
+
 API:
 Upload file:
 POST 'https://parados-task-api-production.up.railway.app/api/file'
+
 Download file:
 GET 'https://parados-task-api-production.up.railway.app/api/file'
+
 Add text:
 POST'https://parados-task-api-production.up.railway.app/api/text'
+
 Get Records:
 GET'https://parados-task-api-production.up.railway.app/api/text'
 
