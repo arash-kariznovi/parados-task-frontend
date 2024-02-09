@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section className=' container mx-auto px-6 flex justify-center md:block'>
       <div className='flex flex-col flex-wrap md:flex-row justify-around relative text-white py-12'>
-        <Link to={'/upload'}>
+        {/* <Link to={'/upload'}>
           <button className='mx-auto bg-sky-400 border-2 hover:bg-sky-600 hover:border-sky-100 p-20 rounded-md my-2 text-center '>
             <img src='upload.png' alt='upload' />
           </button>
@@ -24,7 +24,7 @@ const Home = () => {
           <button className='mx-auto bg-sky-400 border-2 hover:bg-sky-600 hover:border-sky-100 p-20 rounded-md my-2 text-center '>
             <img src='records.png' alt='records' className='w-20 h-20' />
           </button>
-        </Link>
+        </Link> */}
       </div>
     </section>
   )
